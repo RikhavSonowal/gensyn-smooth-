@@ -388,10 +388,41 @@ git pull
 
 
 
+**Additional Works to Do**
+
+```
+cd $HOME/rl-swarm/hivemind_exp/configs/mac/
+ ```
+ls
+```
+nano .......
+```
+
+<pre>
+torch_dtype : float32
+bf16 : false
+tf32 : false
+gradient_checkpointing: false
+per_device_train_batch_size: 1
+<pre>
 
 
+**If Showing Loading at Login**
 
 
+```
+cd rl-swarm
+```
+nano modal-login/app/page.tsx
+```
+
+```
+useEffect(() => {
+    if (!user && !signerStatus.isInitializing) {
+      openAuthModal();
+    }
+  }, [user, signerStatus.isInitializing])
+  ```
 
 
 
