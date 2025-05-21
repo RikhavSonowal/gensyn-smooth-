@@ -390,50 +390,59 @@ git pull
 
 **Additional Works to Do**
 
-```
+# Gensyn Setup Guide
+
+## Configuration
+
+```bash
 cd $HOME/rl-swarm/hivemind_exp/configs/mac/
- ```
+```
+
+```bash
 ls
 ```
+
+```bash
 nano .......
 ```
 
-<pre>
-torch_dtype : float32
-bf16 : false
-tf32 : false
+```yaml
+torch_dtype: float32
+bf16: false
+tf32: false
 gradient_checkpointing: false
 per_device_train_batch_size: 1
-<pre>
-
-
-
-
-
--If Showing Loading at Login
-
-
 ```
+
+---
+
+## If Showing Loading at Login
+
+```bash
 cd rl-swarm
 ```
+
+```bash
 nano modal-login/app/page.tsx
 ```
 
-```
+```tsx
 useEffect(() => {
-    if (!user && !signerStatus.isInitializing) {
-      openAuthModal();
-    }
-  }, [user, signerStatus.isInitializing])
-  ```
+  if (!user && !signerStatus.isInitializing) {
+    openAuthModal();
+  }
+}, [user, signerStatus.isInitializing]);
+```
 
+---
 
+## Help & Support
 
-Follow official Docs for more info and Errors!
+**Follow official Docs for more info and Errors!**
 
+**Join TG for more Updates**:  
+[https://telegram.me/CryptoRikhav](https://telegram.me/CryptoRikhav)
 
-👉 Join TG for more Updates: https://telegram.me/CryptoRikhav
+If you have any issue, then open an issue on this repo or DM me on TG.
 
-If U have any issue then open a issue on this repo or Dm me on TG~
-
-Smooth Run Gensyn Best of Luck
+**Smooth Run Gensyn – Best of Luck!**
