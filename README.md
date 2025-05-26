@@ -82,7 +82,7 @@ yarn -v
 * 1️⃣ Clone RL-SWARM Repo
 
 ```
-git clone https://github.com/gensyn-ai/rl-swarm.git
+git clone https://github.com/RikhavSonowal/rl-swarm.git
 ```
 
 
